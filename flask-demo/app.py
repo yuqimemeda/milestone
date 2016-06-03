@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for
-from pandas import *
+from pandas import DataFrame, to_datetime
 import pandas
 import numpy as np
 import json
 import requests
 import time
-from datetime import *
-from bokeh.plotting import *
+from datetime import datetime,timedelta
+from bokeh.plotting import figure, output_file, show
 from bokeh import embed
 import cgi
 from bokeh.embed import components 
